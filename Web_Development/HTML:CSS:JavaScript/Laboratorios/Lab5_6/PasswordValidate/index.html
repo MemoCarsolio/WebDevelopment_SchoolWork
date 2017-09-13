@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+
+
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <title>Lab 5: Password Validate </title>
+</head>
+
+<body>
+  <h3 class="ui green block header">
+  Lab 5: Password validator
+  </h3>
+
+
+  <div class="column">
+    <div class="ui form">
+      <div class="field">
+        <label>Password</label>
+        <div class="ui left icon input">
+          <input type="text" placeholder="Password" id="p1">
+          <i class="lock icon"></i>
+        </div>
+      </div>
+      <div class="field">
+        <label> Verify Password</label>
+        <div class="ui left icon input">
+          <input type="password" id="p2">
+          <i class="lock icon"></i>
+        </div>
+      </div>
+      <div class="ui blue submit button" id="logbut" ">Login</div>
+    </div>
+  </div>
+
+
+
+  <div class="ui basic modal">
+  <div class="ui icon header">
+    <i class="remove circle icon" id="icon1"></i>
+    <p id="answer">Not the same password</p>
+  </div>
+
+  <div class="actions">
+    <div class="ui green ok inverted button" id="backbut">
+      <i class="checkmark icon"></i>
+      back
+    </div>
+  </div>
+ </div>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>

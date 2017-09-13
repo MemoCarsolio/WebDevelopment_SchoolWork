@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+
+
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <title>Lab 6: Dynamic</title>
+</head>
+
+<body>
+
+  <h3 class="ui block header" id="top_header">
+  Lab 6: Dynamic "Don't click me"
+  </h3>
+
+  <div>
+    <img src="images/ML.png" alt="logo" id="watermark">
+  </div>
+
+
+
+
+  <div class="ui three cards" id="items">
+    <div class="card shape" id="cardo">
+
+      <div class="image">
+        <img src="images/cd.png" alt="Cosmograph">
+      </div>
+      <div id="title_product">
+        COSMOGRAPH DAYTONA
+        <a class="ui olive floating tag label"> -5%</a>
+      </div>
+      <div id="stock">
+        Stock: <a id="stock1">5</a>
+      </div>
+      <div class="ui vertical animated green button" tabindex="0" id="button1">
+        <div class="hidden content">BUY</div>
+        <div class="visible content" id="cost1">
+          <i class="dollar icon"></i> 18,200
+        </div>
+      </div>
+    </div>
+    <div class="card" id="cardo">
+      <div class="image">
+        <img src="images/ak.png" alt="Air">
+      </div>
+      <div id="title_product">
+        AIR-KING
+        <a class="ui olive floating tag label"> -10%</a>
+      </div>
+      <div id="stock">
+        Stock: <a id="stock2">20</a>
+      </div>
+      <div class="ui vertical animated green button" tabindex="0" id="button2">
+        <div class="hidden content">BUY</div>
+        <div class="visible content" id="cost2">
+          <i class="dollar icon"></i> 6,700
+        </div>
+      </div>
+    </div>
+    <div class="card" id="cardo">
+      <div class="image">
+        <img src="images/mila.png" alt="Milagus">
+      </div>
+      <div id="title_product">
+        MILGAUSS
+        <a class="ui olive floating tag label"> -15%</a>
+      </div>
+      <div id="stock">
+        Stock: <a id="stock3">50</a>
+      </div>
+      <div class="ui vertical animated green button" tabindex="0" id="button3">
+        <div class="hidden content">BUY</div>
+        <div class="visible content" id="cost3">
+          <i class="dollar icon"></i> 8,850
+        </div>
+      </div>
+    </div>
+    <div class="ui input" id="input_a">
+      <input type="number" placeholder="amount..." id="amount">
+    </div>
+  </div>
+  <div class="ui bottom attached warning message" id="message">
+    <i class="icon help"></i>You can click the arrows to choose an amount or just type the number.
+  </div>
+  <div class="ui modal">
+    <i class="close icon"></i>
+    <div class="header" id="buy_t">
+
+    </div>
+    <div class="image content">
+      <div class="ui medium image">
+        <img id="img_mod">
+      </div>
+      <div class="description">
+        <div class="ui header">TOTAL COST</div>
+        <div id="description">
+          Cost for all:<a id="ct">1</a><br> Discount:
+          <a id="disc"></a><br> IVA:
+          <a id="iva"> 16%</a><br> Shiping
+          <a id="ship"> $30</a><br>
+          <strong>Total:</strong><a id="total"></a><br>
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+
+      <div class="ui red deny button">
+        Cancel
+      </div>
+      <div class="ui blue right labeled icon button" id="buyb">
+        BUY
+        <i class="dollar icon"></i>
+      </div>
+    </div>
+  </div>
+  <div id="drag_canv">
+    drag img
+    <img src="images/ML.png" alt="drag img" id="dimg" draggable="true" ondragstart="move(event)">
+    <div id="dragaint" ondrop="drop(event)" ondragover="allowMove(event)">
+
+    </div>
+
+  </div>
+
+  <div class="ui raised segment" id="frm">
+    <h3 class="ui block header" id="hpr">Preguntas lab 5</h3>
+    <ul>
+      <li>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor? <br><strong>Siempre es mejor hacer pruebas antes de aventarte y poner ya todo porque es más trabajo quitarlo, modificarlo o cambiarlo</strong></li>
+      <li>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript? <br><strong>puedes alterar el file html con novalidate o puedes acabar borrando el js file</strong></li>
+      <li>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica? <br><strong>por que de todos modos tienes que hacer request al servidor entonces tu información está "protegida"</strong></li>
+    </ul>
+  </div>
+  <div class="ui raised segment" id="frm">
+    <h3 class="ui block header" id="hpr">Preguntas lab 6</h3>
+    <ul>
+      <li>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?<br><strong>absolute: deja al objeto en su lugar y no lo mueve, en cambio fixed lo deja en una posición en la cual si haces scroll te acompaña</strong></li>
+      <li>¿Cuáles son los valores estándar para la propiedad visibility?<br><strong>Visible: lo puedes ver, hidden: no lo puedes ver, collapsed: solo en tablas y es para desaparecer una columna o renglon, initial: regresa al valor inicial, inherit: regresa al valor padre</strong></li>
+      <li>¿Qué es el zIndex y para qué sirve?<br><strong>Especifíca el orden stack[Literal como arrange en word] de un elemento y solo sirve con elementos que tienen atributos de posicion</strong></li>
+    </ul>
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
+</body>
+
+</html>

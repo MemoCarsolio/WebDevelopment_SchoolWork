@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Saira+Semi+Condensed" rel="stylesheet">
+  <title>Lab 4 Java-Script</title>
+</head>
+
+<body>
+  <header>
+    Lab 4 javascript
+
+  </header>
+  <nav>
+    <ul id="ul_menu">
+      <li id="li_menu" onclick="tabla_num()"><a>Ejercicio 1</a></li>
+      <li id="li_menu" onclick="sum_random()"><a>Ejercicio 2</a></li>
+      <li id="li_menu" onclick="arreglo1()"><a>Ejercicio 3</a></li>
+      <li id="li_menu" onclick="arreglo2()"><a>Ejercicio 4</a></li>
+      <li id="li_menu" onclick="reverse()"><a>Ejercicio 5</a></li>
+      <li id="li_menu"><a>Ejercicio 6</a></li>
+
+    </ul>
+  </nav>
+  <article>
+    <table>
+      <tr id="tr_top">
+        <th>Ejercicio</th>
+        <th>Respuestas</th>
+      </tr>
+      <tr>
+        <td id="tdleft"></td>
+        <td id="ans"></td>
+      </tr>
+
+    </table>
+  </article>
+  <article id="article2">
+    <table>
+      <tr id="tr_top" >
+        <th>Preguntas</th>
+        <th>Respuestas</th>
+      </tr>
+      <tr id="tr2">
+        <td>¿Qué diferencias y semejanzas hay entre Java y JavaScript?</td>
+        <td>Javascript es basado en objetos y java es orientado a objetos, ademas en syntax no se parecen en casi nada. <br>Javascript no es compilado, tu lo tienes que integrar directamente al html <br> en javascript no defines un tipo de variable y en java si[2]</td>
+      </tr>
+      <tr id="tr2">
+        <td>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*)</td>
+        <td>getDay(),getSeconds(),getMonth(), getMinutes(), getMilliseconds()[1]</td>
+      </tr>
+      <tr id="tr2">
+        <td>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</td>
+        <td>getElementById(), arreglo.length, arreglo.pop(), arreglo.shift(), arreglo.push()[1]</td>
+      </tr>
+      <tr id="tr2">
+        <td>¿Cómo se declara una variable con alcance local dentro de una función?</td>
+        <td>La declaras dentro de la función</td>
+      </tr>
+      <tr id="tr2">
+        <td>¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</td>
+        <td>tienes que poner mucha atención a no utilizarla por accidente porque pues la puedes alterar cuando no quieres</td>
+      </tr>
+      <tr id="tr2">
+        <td>¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</td>
+        <td>el metodo .search(expresionregular), te sirve para hacer un analisis de los usuarios que visitan el sitio y asi puedes hacer un narrow del target market y proporcionar algo que los beneficie más</td>
+      </tr>
+
+    </table>
+
+    <p>Bibliografía: <br> [1]www.w3schools.com <br> [2]https://www.gestiopolis.com/diferencias-java-javascript/</p>
+  </article>
+  <footer>
+    <p>Text Editor: <a target="_blank" href="https://atom.io/"> Atom </a></p>
+  </footer>
+  <div id="logo"><img src="img_name.png" alt="LOGO"></div>
+
+</body>
+
+<script type="text/javascript" src="javascript.js"></script>
+
+</html>

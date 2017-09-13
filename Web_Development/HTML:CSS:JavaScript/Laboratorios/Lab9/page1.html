@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+
+
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <title>Lab7: php</title>
+</head>
+
+<body>
+  <h3 class="ui green block header">
+  Lab7: php
+  </h3>
+
+
+  <div class="column">
+    <table class="ui celled table">
+      <thead>
+        <tr>
+          <th>Problema</th>
+          <th>Respuesta</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Una función que reciba un arreglo de números y devuelva su promedio <br>a1 = [2,3,14,5,3,24,23,2] <br> a2 = [1,22,15,5,3,24,63,8]</td>
+          <td>
+
+            <?php
+            echo "promedio de a1 = ".promedio([2,3,14,5,3,24,23,2]). "<br>";
+            echo "promedio de a2 = ".promedio([1,22,15,5,3,24,63,8]);
+
+            ?>
+          </td>
+
+        </tr>
+        <tr>
+          <td>Una función que reciba un arreglo de números y devuelva su mediana<br>a1 = [2,3,14,5,3,24,23,2] <br> a2 = [1,22,15,5,3,24,63,8]</td>
+          <td>
+            <?php
+            echo "Mediana de a1 = ".mediana([2,3,14,5,3,24,23,2]). "<br>";
+            echo "Mediana de a2 = ".mediana([1,22,15,5,3,24,63,8]);
+            ?>
+          </td>
+
+        </tr>
+        <tr>
+          <td>Una función que reciba un arreglo de números y muestre la lista de números, y como ítems de una lista html muestre el promedio, la media, y el arreglo ordenado de menor a mayor, y posteriormente de mayor a menor<br>a1 = [3,2,6,7] <br> a2 = [5,6,2,3]</td>
+          <td>
+          <?php
+          echo enlistado([3,2,6,7]);
+          echo enlistado([5,6,2,3])
+
+          ?>
+          </td>
+
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>Una función que imprima una tabla html, que muestre los cuadrados y cubos de 1 hasta un número n <br> uso 3 y 4</th>
+          <th>
+            <?php
+            echo tabla_ncc(3);
+            echo tabla_ncc(4);
+
+            ?>
+          </th>
+
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+
+
+
+  <div class="ui basic modal ">
+
+  </div>
+
+  <table id="table1">
+    <tbody>
+      <tr>
+        <th>Preguntas</th>
+        <th>Respuestas</th>
+      </tr>
+      <tr>
+        <td>¿Qué hace la función phpinfo()? Describe y discute 3 datos que llamen tu atención.</td>
+        <td>phpinfo()te da un status del estado de tu php <br> <ul>
+          <li>INFO_CONFIGURATION <strong>Los valores de "PHP DIRECTIVES" </strong></li>
+          <li>INFO_LICENSE <strong>informacion de la licencia</strong></li>
+          <li>INFO_ALL     <strong> te muestra toda los datos disponibles</strong></li>
+        </ul></td>
+      </tr>
+      <tr>
+        <td>¿Qué cambios tendrías que hacer en la configuración del servidor para que pudiera ser apto en un ambiente de producción?</td>
+        <td>Siento que lo que estamos utilizando no es muy seguro, entonces yo pondría más seguridad como una firewall y otro tipo de acceso a servidor </td>
+      </tr>
+      <tr>
+        <td>¿Cómo es que si el código está en un archivo con código html que se despliega del lado del cliente, se ejecuta del lado del servidor? Explica.</td>
+        <td>El html esta conectado al servidor pero por que se usa el servidor usas el html como soporte no como esqueleto entonces lo puedes modificar con más facilidad y puedes interactuar con multiples archivos</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js "></script>
+
+</body>
+
+</html>

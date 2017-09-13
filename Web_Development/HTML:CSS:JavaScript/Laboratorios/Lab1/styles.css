@@ -1,0 +1,164 @@
+body {
+  font-family: Arial;
+  font-size: small;
+  background: #1f5671;
+  display: grid;
+  grid-template-areas: ". header ." ". nav . " ". article1 ." ". article2 ." ". article3 ."". article ." ". footer .";
+  grid-template-rows: 60px auto auto auto auto auto;
+  grid-template-columns: auto 900px auto;
+  grid-row-gap: 15px;
+  margin: 20px;
+}
+
+footer, article, nav, header {
+  background: white;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  text-align: left;
+  font-weight: normal;
+  padding: 10px;
+}
+
+#strong2 {
+  font-size: 20px;
+  color: black;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0px 0px 10px grey;
+}
+#tableM {
+  table-layout: fixed;
+}
+
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+#th2 {
+  background-color: #0a3042;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2
+}
+
+th {
+  background-color: #1f5671;
+  color: white;
+  text-align: center;
+  
+}
+
+.footer_f{
+	grid-area: footer;
+  text-align: center;
+	font-size: 15px;
+}
+
+article {
+  grid-area: article;
+}
+
+#article2 {
+  grid-area: article2;
+}
+
+#article3 {
+  grid-area: article3;
+}
+#article1{
+	grid-area: article1;
+}
+
+nav {
+  grid-area: nav;
+  padding: inherit;
+  font-weight: bold;
+	background-color: #0a3042;
+
+
+}
+
+header {
+  grid-area: header;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 5px;
+  text-align: center;
+}
+
+header, nav, article, footer {
+  box-shadow: 0px 0px 15px black;
+}
+
+p {
+  font-weight: normal;
+  font-weight: Thin;
+}
+
+ul {
+  font-weight: normal;
+}
+
+strong {
+  color: #56a842;
+}
+
+a {
+  font-weight: normal;
+}
+
+#fuentes {
+  border-collapse: collapse;
+  border: 2px solid #56a842;
+  color: black;
+  padding: 10px;
+  font-weight: bolder;
+}
+	button{
+	background-color: #d7bb72;
+	border: none;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10;
+
+}
+
+	#ul_menu {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    border: 1px solid none;
+	    background-color: #0a3042;
+	}
+
+	#li_menu {
+	    float: left;
+	}
+
+	#li_menu a {
+	    display: block;
+	    color: white;
+	    text-align: center;
+	    padding: 15px 15px;
+	    text-decoration: none;
+	}
+
+	#li_menu a:hover:not(.active) {
+	    background-color: #777;
+	}
+
+	#li_menu a.active {
+	    color: white;
+	    background-color: #0a3042;
+	}
